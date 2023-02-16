@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Toolbar1Activity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:logo="@drawable/ic_menu"
+        android:subtitle="    Extends ViewGroup"
+        android:subtitleTextColor="@color/white"
+        android:title="   Toolbar - 1"
+        android:titleTextColor="@color/white">
+
+        <ImageView
+            android:id="@+id/optionRightMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            android:src="@drawable/ic_options"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/optionLogout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            android:src="@drawable/ic_logout"
+            app:tint="@color/white" />
+    </Toolbar>
+
+</LinearLayout>

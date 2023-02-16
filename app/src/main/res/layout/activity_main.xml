@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center_horizontal"
+        android:text="All different toolbars"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/txtTitle"
+        app:dividerColor="#8B686868"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/btnToolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toolbar 1" />
+
+        <Button
+            android:id="@+id/btnToolbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toolbar 2" />
+
+        <Button
+            android:id="@+id/btnToolbar_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toolbar 3" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
