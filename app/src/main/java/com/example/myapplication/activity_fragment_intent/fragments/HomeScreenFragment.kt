@@ -92,7 +92,6 @@ class HomeScreenFragment : Fragment(), DataPassBook {
         val bundle = Bundle()
         bundle.putString("Name", name)
         fragmentChat.arguments = bundle
-        replaceFragment(fragmentChat)
     }
 }
 

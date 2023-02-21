@@ -38,7 +38,6 @@ class BooksFragment : Fragment() {
         super.onAttach(context)
         if (parentFragment is DataPassBook) {
             dataPassBookListener = parentFragment as DataPassBook
-            childFragmentManager
         }
     }
 
