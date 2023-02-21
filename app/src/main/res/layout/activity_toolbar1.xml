@@ -13,7 +13,7 @@
         android:logo="@drawable/ic_menu"
         android:subtitle="    Extends ViewGroup"
         android:subtitleTextColor="@color/white"
-        android:title="   Toolbar - 1"
+        android:title="   Toolbar - 2"
         android:titleTextColor="@color/white">
 
         <ImageView
