@@ -389,7 +389,91 @@ class ThrowKeyword {
 //7. Every subclass of Error and RuntimeException is unchecked
 //Checked exception is under Throwable class
 
-//8. Exception propagation
+/*
+    8. Exception propagation
+    Unchecked: forwarded in calling chain (propagated)
+    Checked: not forwarded in calling chain (propagated)
+
+    Stack (Only for unchecked)
+    [method 3] <-- Exception occurred (Propogated to prev)
+    [method 2]
+    [method 1]
+      [main]
+
+      Reference:
+        1. https://www.javatpoint.com/exception-propagation
+*/
+class ExceptionPropagation {
+    public static void main(String[] args) {
+        method1();
+    }
+
+    //3. Exception occurs here & not handled
+    static void method3() {
+        int data = 50 / 0;
+    }
+
+    //2. calls exception occurring method
+    static void method2() {
+        method3();
+    }
+
+    //1. Handling exception
+    static void method1() {
+        try {
+            method2();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+/*
+ * Throws : gives an information to the programmer that there may occur an exception
+ * We need to catch exception
+ * It does not handle
+ * */
+class ThrowsExample {
+    public static void main(String[] args) throws IOException {
+
+        //Propagation - with throws
+        method1();
+        System.out.println("Line below exception, Normal flow continues...");
+
+        //Test error throwing functions - declare method signature as "throws"
+        //exceptionNotOccur(); //May throw runtime error
+        //exceptionOccur(); //Runtime error - Better to surround try-catch
+    }
+
+    //3. Exception occurs here & not handled
+    static void method3() throws IOException {
+        throw new IOException("Device Error"); //Checked exception
+    }
+
+    //2. calls exception occurring method
+    static void method2() throws IOException {
+        method3();
+    }
+
+    //1. Handling exception
+    static void method1() {
+        //Surround with try catch or declare as throws (Someone should catch it but we are not)
+        try {
+            method2();
+        } catch (Exception e) {
+            System.out.println(e);
+            System.out.println("Exception handled");
+        }
+    }
+
+    static void exceptionOccur() throws IOException {
+        throw new IOException();
+    }
+
+    static void exceptionNotOccur() throws IOException {
+        System.out.println("IO Devices working");
+    }
+}
 
 
 
