@@ -66,6 +66,7 @@ fun main() {
             return b
         }
     }
+
     //Above fn can be simplified
     fun maxOfModified(a: Int, b: Int) = if (a > b) a else b
     println(maxOfModified(5, 10))
@@ -74,6 +75,40 @@ fun main() {
     //Already covered in kotlin basics
 
     //Ranges ------------------------------------------------------------|
+    //Check if a number is within a range using in operator.
+    //val x = 10, y = 10 //Invalid
+    val x = 10
+    val y = 9
+    if (x in 1..y + 1) println("Fits in range")
 
+    //out of range
+    val list = listOf("a", "b", "c")
+    if (-1 !in 0..list.lastIndex) {
+        println("-1 is not in range")
+    }
 
+    println(list.size)
+    println(list.indices)
+
+    if (list.size !in list.indices) {
+        println("List size is out of list indies")
+    }
+
+    //iterate over range
+    for (x in 1..5) {
+        print("$x ,")
+    }
+    println()
+
+    //over a progression
+    for (x in 1..10 step 2) {
+        print("$x, ")
+    }
+    println()
+    for (x in 9 downTo 0 step 3) {
+        print("$x, ")
+    }
+    println()
+
+    //Iterate in collection, nullable values, type check & auto cast - see in later parts in detail
 }
