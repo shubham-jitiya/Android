@@ -85,4 +85,11 @@ fun main() {
     for (x in x3) {
         println(x)
     }
+
+    //Other --------------------------------------|
+
+    //plus method in Int
+    var luckyNumber = 13
+    println(luckyNumber.plus(2))
+
 }

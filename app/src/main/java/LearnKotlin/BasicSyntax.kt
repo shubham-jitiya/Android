@@ -110,5 +110,22 @@ fun main() {
     }
     println()
 
+    //range in double
+    var rangeIt = 1.0..5.0
+    infix fun ClosedRange<Double>.step(step: Double): Iterable<Double> {
+        require(start.isFinite())
+        require(endInclusive.isFinite())
+        require(step > 0.0) { "Step must be positive, was: $step." }
+        val sequence = generateSequence(start) { previous ->
+            if (previous == Double.POSITIVE_INFINITY) return@generateSequence null
+            val next = previous + step
+            if (next > endInclusive) null else next
+        }
+        return sequence.asIterable()
+    }
+    for (i in 1.0..5.0 step 0.5) {
+        println(i)
+    }
+
     //Iterate in collection, nullable values, type check & auto cast - see in later parts in detail
 }
