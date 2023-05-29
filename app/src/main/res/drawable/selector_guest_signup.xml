@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@color/run_parkin_ripple_color"
+       />
+    <item
+        android:state_selected="false"
+        android:drawable="@color/card_text_color"
+        />
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Grid layout project - shopping app-->
+    <color name="card_background">#1e1e1e</color>
+    <color name="card_light_purple">@color/black_on_surface</color>
+    <color name="card_text_color">#DADADA</color>
+    <color name="card_text_title">@color/black_on_surface</color>
+    <color name="card_text_subtitle">@color/dark_gray_hint</color>
+</resources>

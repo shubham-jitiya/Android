@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uiwidgets.fragments.FirstFragment">
+
+    <Button
+        android:id="@+id/btnGotoSecondFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goto_second_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/btnGotoThirdFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goto_third_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/btnGotoSecondFragment"
+        app:layout_constraintStart_toStartOf="@+id/btnGotoSecondFragment"
+        app:layout_constraintTop_toBottomOf="@+id/btnGotoSecondFragment" />
+
+
+    <EditText
+        android:id="@+id/textViewFirstNameFragmentFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/btnGotoThirdFragment"
+        app:layout_constraintStart_toStartOf="@id/btnGotoThirdFragment"
+        app:layout_constraintTop_toBottomOf="@id/btnGotoThirdFragment" />
+
+    <EditText
+        android:id="@+id/textViewLastNameFragmentFirst"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/textViewFirstNameFragmentFirst"
+        app:layout_constraintStart_toStartOf="@id/textViewFirstNameFragmentFirst"
+        app:layout_constraintTop_toBottomOf="@id/textViewFirstNameFragmentFirst" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

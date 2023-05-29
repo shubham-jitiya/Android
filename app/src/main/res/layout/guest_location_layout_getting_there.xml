@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/textViewGettingThereTitle"
+        style="@style/GuestLocationDetailsInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getting_there"
+        app:layout_constraintTop_toBottomOf="@id/dividerBelowRedeem" />
+
+    <TextView
+        android:id="@+id/textViewGettingThereDescription"
+        style="@style/GuestLocationDetailsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_this_location_at_333_o_keefe_ave_this_is_the_p146_lot_operated_by_premium_parking_it_is_located_on_the_west_left_hand_side_of_o_keefe_ave_a_one_way_street_between_perdido_st_and_union_st_the_entrance_is_marked_by_a_red_p_sign_with_white_lettering"
+        app:layout_constraintTop_toBottomOf="@id/textViewGettingThereTitle" />
+</merge>

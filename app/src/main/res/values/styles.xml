@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="gradientButton" parent="Theme.Material3.DayNight">
+        <item name="android:background">@drawable/button_gradient_selector</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <!-- custom textInputLayout floating hint -->
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="CounterOverflow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ErrorText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF9800</item>
+    </style>
+    <!--    Collapsable App bar title color-->
+    <style name="AppBarTitle" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--    Guest signup edit text-->
+    <style name="EditTextGuestSignup">
+        <item name="android:layout_height">@dimen/guest_signup_edit_text_height</item>
+        <item name="android:layout_width">@dimen/guest_signup_edit_text_width</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_edit_text_guest_signup</item>
+        <item name="android:layout_marginTop">@dimen/guest_signup_edit_text_margin_top</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/guest_signup_text_view_title</item>
+    </style>
+
+    <style name="TextViewGuestSignup">
+        <item name="android:textColor">@color/run_parkin_text_field_title</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+    <!--    Decrese height to 40dp-->
+    <style name="DenseOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="materialThemeOverlay">@style/ThemeOverlayOutlinedDense</item>
+    </style>
+
+    <style name="ThemeOverlayOutlinedDense">
+        <item name="editTextStyle">@style/TextInputEditTextOutlinedDense</item>
+    </style>
+
+    <style name="TextInputEditTextOutlinedDense" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="GuestSignupTabLayout" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="GuestSignupToolbarTitle">
+        <item name="android:textSize">@dimen/guest_signup_toolbar_title</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <!--    Guest location-->
+    <style name="GuestLocationDetailsDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/guest_location_details_description</item>
+    </style>
+
+    <style name="GuestLocationDetailsInfoTitle">
+        <item name="android:textSize">@dimen/guest_location_title_info_text_size</item>
+        <item name="android:layout_marginTop">@dimen/guest_location_title_info_margin_top</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GuestLocationInfoAmenities">
+        <item name="android:layout_marginStart">@dimen/guest_location_title_info_margin_start</item>
+    </style>
+
+    <style name="GuestLocationRedeemPointNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/guest_location_redeem_point_text_color</item>
+    </style>
+
+    <style name="GuestLocationRedeemCircleBG">
+        <item name="android:layout_width">@dimen/guest_location_text_view_redeem_circle</item>
+        <item name="android:layout_height">@dimen/guest_location_text_view_redeem_circle</item>
+        <item name="android:background">@drawable/bg_circle_cyan</item>
+    </style>
+
+    <style name="GuestLocationRedeemImageEnd">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="GuestLocationDivider">
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="GuestLocationFooterButtonView">
+        <item name="android:layout_height">82dp</item>
+        <item name="android:background">@color/run_parkin_primary</item>
+        <item name="android:layout_marginTop">@dimen/guest_location_divider_margin_top</item>
+    </style>
+
+    <style name="RunParkinButtonPrimary">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/run_parkin_primary</item>
+        <item name="android:textSize">@dimen/guest_signup_button_create_account</item>
+        <item name="android:layout_marginStart">@dimen/run_parkin_button_primary_margin_horizontal
+        </item>
+        <item name="android:layout_marginEnd">@dimen/run_parkin_button_primary_margin_horizontal
+        </item>
+        <item name="rippleColor">@color/run_parkin_ripple_color</item>
+    </style>
+
+    <style name="GuestLocationHighlightedText">
+        <item name="android:textColor">@color/run_parkin_text_color_cyan</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:background">@drawable/bg_rectangle_circular_cyan_light</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="GuestLocationChips" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:layout_width">@dimen/guest_location_chips_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/run_parkin_chip_text</item>
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipStrokeWidth">@dimen/guest_location_chips_stroke_width</item>
+        <item name="rippleColor">@color/run_parkin_ripple_color</item>
+    </style>
+
+    <style name="GuestLocationTitle">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GuestLocationEditText">
+        <item name="android:focusable">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:background">@drawable/bg_edit_text_white_normal</item>
+        <item name="android:textSize">@dimen/guest_location_edit_text</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+</resources>

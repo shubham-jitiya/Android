@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".uiwidgets.GridLayoutActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayoutLoremIpsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_image"
+            android:text="@string/dummy_text_sentence_short" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/dark_gray_hint"
+            android:text="@string/dummy_text_sentence_short" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/next" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayoutEqualDistribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_on_surface"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintEnd_toEndOf="@id/gridLayoutLoremIpsum"
+        app:layout_constraintStart_toStartOf="@id/gridLayoutLoremIpsum"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutLoremIpsum">
+
+        <Button
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="-4dp"
+            android:text="@string/title_1"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="-4dp"
+            android:text="@string/title_2"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="@string/title_3"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="@string/title_4"
+            android:textSize="16sp" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gridLayoutEqualDistribution"
+        app:layout_constraintStart_toStartOf="@id/gridLayoutEqualDistribution"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutEqualDistribution">
+
+        <Button
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/white_text_color"
+            android:text="@string/_1"
+            android:textColor="@color/black_on_surface"
+            android:textSize="50sp" />
+
+        <Button
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/white_text_color"
+            android:text="@string/_2"
+            android:textColor="@color/black_on_surface"
+            android:textSize="50sp" />
+
+        <Button
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/white_text_color"
+            android:text="@string/_3"
+            android:textColor="@color/black_on_surface"
+            android:textSize="50sp" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/white_text_color"
+            android:text="@string/_4"
+            android:textColor="@color/black_on_surface"
+            android:textSize="50sp" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

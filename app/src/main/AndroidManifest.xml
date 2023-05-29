@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,78 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".uiwidgets.UIWidgetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.GuestLocationDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GuestSignup" />
+        <activity
+            android:name=".uiwidgets.GuestSignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GuestSignup" />
+        <activity
+            android:name=".uiwidgets.FrameLayoutManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.NavigationComponentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.CoordinateLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.GridLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.GridLayoutProjectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".uiwidgets.ConstraintLayoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".uiwidgets.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.AppBarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".uiwidgets.TabLayoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".uiwidgets.TextInputLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.SnackbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.FloatingActionButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.SelectionControlsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ImageButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ToggleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiwidgets.ButtonsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +95,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

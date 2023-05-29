@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guestLocationDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uiwidgets.GuestLocationDetailsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarGuestLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/run_parkin_primary"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_chevron_left"
+        app:title="179 W Washington"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/GuestSignupToolbarTitle"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollViewGuestLocation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarGuestLocation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderHeaderImages"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/guest_location_images_header_height"
+                android:layout_centerInParent="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#FFF"
+                app:sliderIndicatorUnselectedColor="#5A5A5A"
+                app:sliderScrollTimeInSec="1" />
+
+            <TextView
+                android:id="@+id/textViewCurrentImageCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:background="#777777"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/sliderHeaderImages"
+                app:layout_constraintTop_toTopOf="@id/sliderHeaderImages"
+                tools:text="1/3" />
+
+            <TextView
+                android:id="@+id/textViewLocationId"
+                style="@style/GuestLocationHighlightedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/guest_location_margin"
+                android:layout_marginTop="@dimen/guest_location_text_view_location_id_margin_top"
+                android:text="@string/_24582"
+                android:textSize="@dimen/guest_location_text_view_location_id"
+                app:layout_constraintEnd_toStartOf="@id/textViewLocationName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderHeaderImages" />
+
+            <TextView
+                android:id="@+id/textViewLocationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/guest_location_text_view_location_name_margin_start"
+                android:fontFamily="@font/poppins"
+                android:text="@string/_179_w_washington_st"
+                android:textColor="@color/black"
+                android:textSize="@dimen/guest_location_text_view_location_name"
+                app:layout_constraintBottom_toBottomOf="@id/textViewLocationId"
+                app:layout_constraintStart_toEndOf="@id/textViewLocationId"
+                app:layout_constraintTop_toTopOf="@id/textViewLocationId" />
+
+            <RatingBar
+                android:id="@+id/ratingLocation"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/guest_location_ratingbar_margin_top"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="@color/run_parkin_location_details_rating"
+                android:rating="4"
+                app:layout_constraintStart_toStartOf="@id/textViewLocationId"
+                app:layout_constraintTop_toBottomOf="@id/textViewLocationId" />
+
+            <TextView
+                android:id="@+id/textViewRatingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/guest_location_rating_count_margin_start"
+                android:includeFontPadding="false"
+                android:text="@string/_1_2k"
+                android:textSize="@dimen/guest_location_text_view_rating_count"
+                app:layout_constraintBottom_toBottomOf="@id/ratingLocation"
+                app:layout_constraintStart_toEndOf="@id/ratingLocation"
+                app:layout_constraintTop_toTopOf="@id/ratingLocation" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                style="@style/GuestLocationHighlightedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/guest_location_price_margin_end"
+                android:paddingStart="@dimen/guest_location_text_view_price_padding_start"
+                android:paddingTop="@dimen/guest_location_text_view_price_padding_top"
+                android:paddingEnd="@dimen/guest_location_text_view_price_padding_end"
+                android:paddingBottom="@dimen/guest_location_text_view_price_padding_bottom"
+                android:text="@string/_10"
+                android:textSize="@dimen/guest_location_text_view_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewLocationName" />
+
+            <ImageView
+                android:id="@+id/imageViewWalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/guest_location_distance_icon_margin_top"
+                android:src="@drawable/ic_walk"
+                app:layout_constraintStart_toStartOf="@id/ratingLocation"
+                app:layout_constraintTop_toBottomOf="@id/ratingLocation" />
+
+            <TextView
+                android:id="@+id/textViewDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/guest_location_text_view_distance_margin_start"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/_0_2_mi"
+                android:textSize="@dimen/guest_location_text_view_distance"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewWalk"
+                app:layout_constraintStart_toEndOf="@id/imageViewWalk"
+                app:layout_constraintTop_toTopOf="@id/imageViewWalk" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutLocationDetailsAccountType"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="@dimen/guest_location_margin"
+                android:layout_marginTop="@dimen/guest_signup_text_view_first_name_margin_top"
+                android:background="@drawable/gradient_guest_signup_deselected"
+                app:layout_constraintBottom_toTopOf="@id/viewPagerLocationDetails"
+                app:layout_constraintTop_toBottomOf="@id/textViewDistance"
+                app:tabIndicator="@drawable/gradient_guest_signup_selected"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabIndicatorColor="@null"
+                app:tabIndicatorGravity="stretch"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/GuestSignupTabLayout"
+                app:tabTextColor="@color/run_parkin_tab_deselected_text" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerLocationDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/viewBottomGuestLocation"
+                app:layout_constraintEnd_toEndOf="@id/tabLayoutLocationDetailsAccountType"
+                app:layout_constraintStart_toStartOf="@id/tabLayoutLocationDetailsAccountType"
+                app:layout_constraintTop_toBottomOf="@id/tabLayoutLocationDetailsAccountType" />
+
+            <View
+                android:id="@+id/viewBottomGuestLocation"
+                style="@style/GuestLocationFooterButtonView"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewPagerLocationDetails" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonBookNow"
+                style="@style/RunParkinButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_now"
+                app:layout_constraintBottom_toBottomOf="@id/viewBottomGuestLocation"
+                app:layout_constraintEnd_toEndOf="@id/viewBottomGuestLocation"
+                app:layout_constraintStart_toStartOf="@id/viewBottomGuestLocation"
+                app:layout_constraintTop_toTopOf="@id/viewBottomGuestLocation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

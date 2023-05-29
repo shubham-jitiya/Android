@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    android:columnCount="2"
+    android:padding="@dimen/padding"
+    android:rowCount="9"
+    tools:context=".uiwidgets.GridLayoutProjectActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/good_morning"
+        android:textColor="@color/card_text_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_rowSpan="3"
+        android:layout_columnWeight="1"
+        android:src="@drawable/img_person" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/marcus_white"
+        android:textColor="@color/card_text_color"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/san_francisco_ca"
+        android:textColor="@color/card_text_subtitle"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/all_products"
+        android:textColor="@color/card_text_color"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:fontFamily="@font/montserrat"
+        android:gravity="end"
+        android:text="@string/show_all"
+        android:textColor="@color/card_text_color"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+
+    <include
+        layout="@layout/item_layout_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <include
+        layout="@layout/item_layout_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_circular_light_purple" />
+
+    <include
+        layout="@layout/item_layout_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <include
+        layout="@layout/item_layout_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp" />
+</GridLayout>
