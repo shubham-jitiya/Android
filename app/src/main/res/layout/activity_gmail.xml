@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gmailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recyclerview.GmailActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Enter name"
+        app:queryBackground="@android:color/transparent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewGmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_light_blue"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/textViewTitleContacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchViewGmail"
+        app:layout_constraintVertical_weight="7" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTitleContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/montserrat_semibold"
+        android:padding="8dp"
+        android:text="@string/contacts"
+        android:textSize="@dimen/subtitle"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewContacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewGmail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mail_contacts_recyclerview_background"
+        android:paddingTop="@dimen/mail_contacts_card_padding_top"
+        android:paddingBottom="@dimen/mail_contacts_card_padding_bottom"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleContacts"
+        app:layout_constraintVertical_weight="3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

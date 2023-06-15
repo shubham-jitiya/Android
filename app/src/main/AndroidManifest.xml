@@ -87,6 +87,32 @@
             android:name=".uiwidgets.ButtonsActivity"
             android:exported="false" />
         <activity
+            android:name=".recyclerview.RecyclerViewDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.DataBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.ImageSliderViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.SimpleBottomNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.GmailActivity"
+            android:exported="true"
+            android:theme="@style/GmailTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerview.SimpleListViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

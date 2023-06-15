@@ -7,6 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mail_important_selected">#3F51B5</color>
+    <color name="mail_mark_important_unselected">#9D9D9D</color>
+    <color name="dark_gray">#D2D2D2</color>
+    <color name="light_gray">#DADADA</color>
+    <color name="background_light_blue">#E0F7FA</color>
+    <color name="bottom_navigation">#D1C4E9</color>
+    <color name="mail_contacts_recyclerview_background">#EBEBEB</color>
 
     <color name="black_on_primary">#363636</color>
     <color name="black_on_surface">#3d3d3d</color>

@@ -7,10 +7,20 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonUIWidgets"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ui_widgets"
+        style="@style/Widget.AppCompat.Button"
         tools:ignore="VisualLintButtonSize" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize"
+        android:text="@string/recycler_view"
+        style="@style/Widget.AppCompat.Button"
+        />
 </androidx.appcompat.widget.LinearLayoutCompat>
