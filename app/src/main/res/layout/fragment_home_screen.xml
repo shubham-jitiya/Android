@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEBEE"
+    android:padding="@dimen/padding"
+    tools:context=".activity_fragment_intent.fragments.HomeScreenFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBooks"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/books"
+        app:layout_constraintEnd_toStartOf="@id/buttonChats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonChats"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonBooks"
+        app:layout_constraintTop_toTopOf="@id/buttonBooks" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDataPassing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/buttonChats"
+        app:layout_constraintStart_toStartOf="@id/buttonBooks"
+        app:layout_constraintTop_toBottomOf="@id/buttonBooks">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/using_interface" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonFragmentManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_manager" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonSharedModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shared_model" />
+    </RadioGroup>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerHomeScreen"
+        android:name="com.example.myapplication.activity_fragment_intent.fragments.BooksFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupDataPassing"
+        tools:layout="@layout/fragment_books" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,23 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="@dimen/padding"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonUIWidgets"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ui_widgets"
-        style="@style/Widget.AppCompat.Button"
         tools:ignore="VisualLintButtonSize" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonRecyclerView"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="VisualLintButtonSize"
         android:text="@string/recycler_view"
+        tools:ignore="VisualLintButtonSize" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonFragment"
         style="@style/Widget.AppCompat.Button"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_fragment_intent" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

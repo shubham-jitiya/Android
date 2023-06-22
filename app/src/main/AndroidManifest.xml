@@ -2,8 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -113,6 +121,35 @@
             android:name=".recyclerview.SimpleListViewActivity"
             android:exported="true" />
         <activity
+            android:name=".activity_fragment_intent.FragmentDemoCommunicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.WebViewActivity"
+            android:configChanges="orientation"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.IntentActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.SecondActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fragment_intent.uiwidgets.LifecycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -121,6 +158,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
 
         <meta-data
             android:name="preloaded_fonts"

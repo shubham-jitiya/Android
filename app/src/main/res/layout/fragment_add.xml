@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    android:padding="@dimen/padding"
+    tools:context=".activity_fragment_intent.fragments.AddFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTexAddFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSendToUploadFragment"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_to_upload_fragment"
+        app:layout_constraintEnd_toEndOf="@id/editTexAddFragment"
+        app:layout_constraintStart_toStartOf="@id/editTexAddFragment"
+        app:layout_constraintTop_toBottomOf="@id/editTexAddFragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
