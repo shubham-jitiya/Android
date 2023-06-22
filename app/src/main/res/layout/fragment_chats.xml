@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:background="#EDE7F6"
+    tools:context=".activity_fragment_intent.fragments.ChatsFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextChatFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSendToBookFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_to_book_fragment"
+        app:layout_constraintEnd_toEndOf="@id/editTextChatFragment"
+        app:layout_constraintStart_toStartOf="@id/editTextChatFragment"
+        app:layout_constraintTop_toBottomOf="@id/editTextChatFragment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsFragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chats_fragment"
+        app:layout_constraintTop_toBottomOf="@id/buttonSendToBookFragment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsFragmentDataSharedModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_shared_model"
+        app:layout_constraintTop_toBottomOf="@id/textViewChatsFragmentTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChatsFragmentDataInterface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_interface_na"
+        app:layout_constraintTop_toBottomOf="@id/textViewChatsFragmentDataSharedModel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding"
+        tools:context=".activity_fragment_intent.uiwidgets.IntentActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentExplicit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explicit_intent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentBrowser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/browser"
+            app:layout_constraintEnd_toEndOf="@id/buttonIntentExplicit"
+            app:layout_constraintStart_toStartOf="@id/buttonIntentExplicit"
+            app:layout_constraintTop_toBottomOf="@id/buttonIntentExplicit" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm"
+            app:layout_constraintEnd_toEndOf="@id/buttonIntentBrowser"
+            app:layout_constraintStart_toStartOf="@id/buttonIntentBrowser"
+            app:layout_constraintTop_toBottomOf="@id/buttonIntentBrowser" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/e_mail"
+            app:layout_constraintEnd_toEndOf="@id/buttonIntentAlarm"
+            app:layout_constraintStart_toStartOf="@id/buttonIntentAlarm"
+            app:layout_constraintTop_toBottomOf="@id/buttonIntentAlarm" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewIntentGallery"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toStartOf="@id/buttonIntentGallery"
+            app:layout_constraintStart_toStartOf="@id/buttonIntentMail"
+            app:layout_constraintTop_toBottomOf="@id/buttonIntentMail" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:text="@string/set_image_from_file"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewIntentGallery"
+            app:layout_constraintEnd_toEndOf="@id/buttonIntentMail"
+            app:layout_constraintStart_toEndOf="@id/imageViewIntentGallery"
+            app:layout_constraintTop_toTopOf="@id/imageViewIntentGallery" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewIntentCameraImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toStartOf="@id/buttonIntentCameraImage"
+            app:layout_constraintStart_toStartOf="@id/imageViewIntentGallery"
+            app:layout_constraintTop_toBottomOf="@id/imageViewIntentGallery" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntentCameraImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:text="@string/set_image_from_camera"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewIntentCameraImage"
+            app:layout_constraintEnd_toEndOf="@id/buttonIntentGallery"
+            app:layout_constraintStart_toEndOf="@id/imageViewIntentCameraImage"
+            app:layout_constraintTop_toTopOf="@id/imageViewIntentCameraImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

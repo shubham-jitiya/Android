@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_fragment_intent.FragmentDemoCommunicationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonActivityLifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonIntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intent"
+            app:layout_constraintTop_toBottomOf="@id/buttonActivityLifecycle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonFragmentCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_communication"
+            app:layout_constraintTop_toBottomOf="@id/buttonIntent" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerMainActivity"
+            android:name="com.example.myapplication.activity_fragment_intent.fragments.HomeScreenFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonFragmentCommunication"
+            tools:layout="@layout/fragment_home_screen" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerAdd"
+            android:name="com.example.myapplication.activity_fragment_intent.fragments.AddFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/fragmentContainerMainActivity"
+            tools:layout="@layout/fragment_add" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerUpload"
+            android:name="com.example.myapplication.activity_fragment_intent.fragments.UploadFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/fragmentContainerAdd"
+            tools:layout="@layout/fragment_upload" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPendingIntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/send_notification"
+            app:layout_constraintTop_toBottomOf="@id/fragmentContainerUpload" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/web_view"
+            app:layout_constraintTop_toBottomOf="@id/buttonPendingIntent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
