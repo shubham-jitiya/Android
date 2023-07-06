@@ -23,6 +23,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".webservice.WebserviceDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".uiwidgets.UIWidgetsActivity"
             android:exported="false" />
         <activity
@@ -129,7 +132,7 @@
             android:exported="false" />
         <activity
             android:name=".activity_fragment_intent.uiwidgets.IntentActivity"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.SET_ALARM" />
 
@@ -163,7 +166,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.myapplication.fileProvider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path" />

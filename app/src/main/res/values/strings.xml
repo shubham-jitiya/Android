@@ -242,6 +242,23 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="data_shared_model">Data shared model:</string>
     <string name="data_interface">Data Interface:</string>
     <string name="data_interface_na">Data interface: NA</string>
+    <!--    Web view-->
     <string name="web_view">Web view</string>
     <string name="activity_fragment_intent">Activity - Fragment - Intent</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_job">Enter job</string>
+    <string name="add">Add</string>
+    <string name="login">Login</string>
+    <string name="eve_holt_reqres_in">eve.holt@reqres.in</string>
+    <string name="cityslicka">cityslicka</string>
+    <string name="practice">Practice</string>
+    <string name="web_service_exercise">Web service exercise</string>
+    <string name="no_data_found">No DATA FOUND</string>
+    <string name="enter_id">Enter id</string>
+    <string name="get_all">Get All</string>
+    <string name="push_post_encrypted">Push post encrypted</string>
+    <string name="push_post">Push post</string>
+    <string name="search_post">Search post</string>
+    <string name="sort_post">Sort post</string>
+    <string name="web_service">Web service</string>
 </resources>
