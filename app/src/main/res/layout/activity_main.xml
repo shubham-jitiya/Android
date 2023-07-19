@@ -37,4 +37,11 @@
         android:layout_height="wrap_content"
         android:text="@string/web_service" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSinglePermission"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -261,4 +261,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="search_post">Search post</string>
     <string name="sort_post">Sort post</string>
     <string name="web_service">Web service</string>
+    <string name="permission">Permission</string>
 </resources>
