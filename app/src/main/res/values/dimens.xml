@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    General -->
+    <dimen name="padding">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="margin_button_end">8dp</dimen>
+    <dimen name="margin_button_start">8dp</dimen>
+
+    <!--    Hotel booking app -->
+    <dimen name="hotel_booking_edit_text_margin_top">4dp</dimen>
+    <dimen name="hotel_booking_text_view_margin_top">8dp</dimen>
+
+
+    <!--    Guest signup-->
+    <dimen name="guest_signup_app_name">21sp</dimen>
+    <dimen name="guest_signup_subscribe_newsletter">12sp</dimen>
+    <dimen name="guest_signup_app_name_margin_top">22.44dp</dimen>
+    <dimen name="guest_signup_app_logo_margin_end">25.99dp</dimen>
+    <!--    ToolbarTitle font size-->
+    <dimen name="guest_signup_toolbar_title">16sp</dimen>
+    <!--    Text View-->
+    <dimen name="guest_signup_text_view_first_name_margin_top">30dp</dimen>
+    <dimen name="guest_signup_text_view_email_id_margin_top">10dp</dimen>
+    <dimen name="guest_signup_text_view_policy_margin_top">15dp</dimen>
+    <dimen name="guest_signup_text_view_first_name_margin_end">10dp</dimen>
+    <dimen name="guest_signup_text_view_last_name_margin_start">10dp</dimen>
+    <dimen name="guest_signup_text_view_or_padding_horizontal">8.64dp</dimen>
+    <dimen name="guest_signup_text_view_or_margin_top">31dp</dimen>
+    <!--    TextView font size-->
+    <dimen name="guest_signup_text_view_title">12sp</dimen>
+    <dimen name="guest_signup_text_or">13sp</dimen>
+    <dimen name="guest_signup_policy">12sp</dimen>
+    <!--    Button-->
+    <dimen name="guest_signup_button_apple_margin_top">27dp</dimen>
+    <dimen name="guest_signup_button_facebook_margin_end">6.5dp</dimen>
+    <dimen name="guest_signup_button_google_margin_start">6.5dp</dimen>
+    <!--    Button font size-->
+    <dimen name="guest_signup_button_create_account">14sp</dimen>
+    <dimen name="guest_signup_button_signin">16sp</dimen>
+    <!--    EditText-->
+    <dimen name="guest_signup_edit_text_mobile_number_margin_start">10dp</dimen>
+    <dimen name="guest_signup_edit_text_country_code_padding_start">8dp</dimen>
+    <dimen name="guest_signup_edit_text_margin_top">2dp</dimen>
+    <dimen name="guest_signup_edit_text_stroke_width">1dp</dimen>
+    <dimen name="guest_signup_edit_text_radius">4dp</dimen>
+    <dimen name="guest_signup_edit_text_height">40dp</dimen>
+    <dimen name="guest_signup_edit_text_width">0dp</dimen>
+    <!--    Tab layout-->
+    <dimen name="guest_signup_tablayout_radius">4dp</dimen>
+    <!--    Checkbox-->
+    <dimen name="guest_signup_checkbox_padding_start">5dp</dimen>
+
+    <!--    Guest Location-->
+    <dimen name="guest_location_default_font_size">14sp</dimen>
+    <dimen name="guest_location_text_view_location_name">17sp</dimen>
+    <dimen name="guest_location_title_info_text_size">15sp</dimen>
+    <dimen name="guest_location_text_view_location_id">14sp</dimen>
+    <dimen name="guest_location_edit_text">14sp</dimen>
+    <dimen name="guest_location_text_view_price">24sp</dimen>
+    <dimen name="guest_location_text_view_distance">14sp</dimen>
+    <dimen name="guest_location_text_view_rating_count">13sp</dimen>
+
+    <dimen name="guest_location_images_header_height">241dp</dimen>
+    <dimen name="guest_location_divider_height">1dp</dimen>
+    <dimen name="guest_location_text_view_redeem_circle">30dp</dimen>
+    <!--    padding-->
+    <dimen name="guest_location_padding">16dp</dimen>
+    <dimen name="guest_location_text_view_price_padding_start">12dp</dimen>
+    <dimen name="guest_location_text_view_price_padding_top">2dp</dimen>
+    <dimen name="guest_location_text_view_price_padding_end">12dp</dimen>
+    <dimen name="guest_location_text_view_price_padding_bottom">2dp</dimen>
+    <!--    margin-->
+    <dimen name="run_parkin_button_primary_margin_horizontal">20dp</dimen>
+    <dimen name="guest_location_text_view_location_id_margin_top">19dp</dimen>
+    <dimen name="guest_location_text_view_location_name_margin_start">7dp</dimen>
+    <dimen name="guest_location_text_view_distance_margin_start">1.5dp</dimen>
+    <dimen name="guest_location_schedule_margin_top">24dp</dimen>
+    <dimen name="guest_location_ratingbar_margin_top">6dp</dimen>
+    <dimen name="guest_location_rating_count_margin_start">6dp</dimen>
+    <dimen name="guest_location_distance_icon_margin_top">4dp</dimen>
+    <dimen name="guest_location_divider_margin_top">20dp</dimen>
+    <dimen name="guest_location_text_view_redeem_points_margin_horizontal">14dp</dimen>
+    <dimen name="guest_location_text_view_redeem_points_margin_top">9dp</dimen>
+    <dimen name="guest_location_text_view_margin_start">7.5dp</dimen>
+    <dimen name="guest_location_text_view_margin_end">7.5dp</dimen>
+    <dimen name="guest_location_edit_text_date_margin_top">4dp</dimen>
+    <dimen name="guest_location_edit_text_time_margin_top">10dp</dimen>
+    <dimen name="guest_location_title_info_margin_top">19dp</dimen>
+    <dimen name="guest_location_title_info_margin_start">8dp</dimen>
+    <dimen name="guest_location_margin_start">16dp</dimen>
+    <dimen name="guest_location_location_id_margin_start">19dp</dimen>
+    <dimen name="guest_location_price_margin_end">16dp</dimen>
+    <dimen name="guest_location_margin">16dp</dimen>
+    <!--chips-->
+    <dimen name="guest_location_chips_width">78dp</dimen>
+    <dimen name="guest_location_chips_stroke_width">1dp</dimen>
+    <dimen name="guest_location_chips_horizontal_spacing">10dp</dimen>
+    <dimen name="guest_location_chips_radius">13dp</dimen>
+    <dimen name="padding_start">8dp</dimen>
+    <dimen name="padding_end">8dp</dimen>
+
+
+</resources>

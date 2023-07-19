@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/textViewARedeemTitle"
+        style="@style/GuestLocationDetailsInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_redeem"
+        app:layout_constraintTop_toBottomOf="@id/dividerBelowActiveHours" />
+
+    <View
+        android:id="@+id/viewRedeemPointFirst"
+        style="@style/GuestLocationRedeemCircleBG"
+        app:layout_constraintEnd_toStartOf="@id/textViewRedeemPointFirst"
+        app:layout_constraintStart_toStartOf="@id/textViewARedeemTitle"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointFirst" />
+
+    <TextView
+        android:id="@+id/textViewRedeemPointNumberFirst"
+        style="@style/GuestLocationRedeemPointNumber"
+        android:text="@string/_1"
+        app:layout_constraintBottom_toBottomOf="@id/viewRedeemPointFirst"
+        app:layout_constraintEnd_toEndOf="@id/viewRedeemPointFirst"
+        app:layout_constraintStart_toStartOf="@id/viewRedeemPointFirst"
+        app:layout_constraintTop_toTopOf="@id/viewRedeemPointFirst" />
+
+    <TextView
+        android:id="@+id/textViewRedeemPointFirst"
+        style="@style/GuestLocationDetailsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/guest_location_text_view_redeem_points_margin_horizontal"
+        android:layout_marginTop="@dimen/guest_location_text_view_redeem_points_margin_top"
+        android:text="@string/make_sure_your_license_plate_matches_the_plate_on_your_parking_pass"
+        app:layout_constraintEnd_toStartOf="@id/imageViewRedeemPointFirst"
+        app:layout_constraintStart_toEndOf="@id/viewRedeemPointFirst"
+        app:layout_constraintTop_toBottomOf="@id/textViewARedeemTitle" />
+
+    <ImageView
+        android:id="@+id/imageViewRedeemPointFirst"
+        style="@style/GuestLocationRedeemImageEnd"
+        android:src="@drawable/ic_redeem_first"
+        app:layout_constraintEnd_toEndOf="@id/textViewARedeemTitle"
+        app:layout_constraintStart_toEndOf="@id/textViewRedeemPointFirst"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointFirst" />
+
+    <TextView
+        android:id="@+id/textViewRedeemPointSecond"
+        style="@style/GuestLocationDetailsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/guest_location_text_view_redeem_points_margin_horizontal"
+        android:layout_marginTop="@dimen/guest_location_text_view_redeem_points_margin_top"
+        android:text="@string/you_may_park_anywhere_that_doesn_t_say_reserved_have_a_person_s_name_a_business_name_or_any_other_special_signage_or_messaging_on_the_actual_space_failure_to_do_so_will_result_in_a_ticket_tow_or_immobilization"
+        app:layout_constraintEnd_toStartOf="@id/imageViewRedeemPointSecond"
+        app:layout_constraintStart_toEndOf="@id/viewRedeemPointSecond"
+        app:layout_constraintTop_toBottomOf="@id/textViewRedeemPointFirst" />
+
+    <View
+        android:id="@+id/viewRedeemPointSecond"
+        style="@style/GuestLocationRedeemCircleBG"
+        app:layout_constraintEnd_toStartOf="@id/textViewRedeemPointSecond"
+        app:layout_constraintStart_toStartOf="@id/viewRedeemPointFirst"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointSecond" />
+
+    <TextView
+        android:id="@+id/textPointRedeemPointNumberSecond"
+        style="@style/GuestLocationRedeemPointNumber"
+        android:text="@string/_2"
+        app:layout_constraintBottom_toBottomOf="@id/viewRedeemPointSecond"
+        app:layout_constraintEnd_toEndOf="@id/viewRedeemPointSecond"
+        app:layout_constraintStart_toStartOf="@id/viewRedeemPointSecond"
+        app:layout_constraintTop_toTopOf="@id/viewRedeemPointSecond" />
+
+    <ImageView
+        android:id="@+id/imageViewRedeemPointSecond"
+        style="@style/GuestLocationRedeemImageEnd"
+        android:src="@drawable/ic_redeem_second"
+        app:layout_constraintEnd_toEndOf="@id/imageViewRedeemPointFirst"
+        app:layout_constraintStart_toEndOf="@id/textViewRedeemPointSecond"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointSecond" />
+
+    <View
+        android:id="@+id/viewRedeemPointThird"
+        style="@style/GuestLocationRedeemCircleBG"
+        app:layout_constraintEnd_toStartOf="@id/textViewRedeemPointThird"
+        app:layout_constraintStart_toStartOf="@id/viewRedeemPointSecond"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointThird" />
+
+    <TextView
+        android:id="@+id/textPointRedeemPointNumberThird"
+        style="@style/GuestLocationRedeemPointNumber"
+        android:text="@string/_3"
+        app:layout_constraintBottom_toBottomOf="@id/viewRedeemPointThird"
+        app:layout_constraintEnd_toEndOf="@id/viewRedeemPointThird"
+        app:layout_constraintStart_toStartOf="@id/viewRedeemPointThird"
+        app:layout_constraintTop_toTopOf="@id/viewRedeemPointThird" />
+
+    <TextView
+        android:id="@+id/textViewRedeemPointThird"
+        style="@style/GuestLocationDetailsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/guest_location_text_view_redeem_points_margin_horizontal"
+        android:layout_marginTop="@dimen/guest_location_text_view_redeem_points_margin_top"
+        android:text="@string/simply_leave_when_you_re_ready_to_go"
+        app:layout_constraintEnd_toStartOf="@id/imageViewRedeemPointThird"
+        app:layout_constraintStart_toEndOf="@id/viewRedeemPointThird"
+        app:layout_constraintTop_toBottomOf="@id/textViewRedeemPointSecond" />
+
+    <ImageView
+        android:id="@+id/imageViewRedeemPointThird"
+        style="@style/GuestLocationRedeemImageEnd"
+        android:src="@drawable/ic_redeem_third"
+        app:layout_constraintEnd_toEndOf="@id/imageViewRedeemPointSecond"
+        app:layout_constraintStart_toEndOf="@id/textViewRedeemPointThird"
+        app:layout_constraintTop_toTopOf="@id/textViewRedeemPointThird" />
+</merge>

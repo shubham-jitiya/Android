@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/run_parkin_primary">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarGuestSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/scrollViewGuestSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_chevron_left"
+        app:title="Customer Sign Up"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/GuestSignupToolbarTitle"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollViewGuestSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarGuestSignup">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/margin">
+
+            <ImageView
+                android:id="@+id/imageViewGuestSignupLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/guest_signup_app_logo_margin_end"
+                android:src="@drawable/run_parking_logo"
+                app:layout_constraintBottom_toBottomOf="@id/textViewAppName"
+                app:layout_constraintEnd_toStartOf="@+id/textViewAppName"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewAppName" />
+
+            <TextView
+                android:id="@+id/textViewAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/guest_signup_app_name_margin_top"
+                android:fontFamily="@font/typo_hoop_demo_bold"
+                android:text="@string/runparking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/guest_signup_app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageViewGuestSignupLogo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutAccountType"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/guest_signup_text_view_first_name_margin_top"
+                android:background="@drawable/gradient_guest_signup_deselected"
+                app:layout_constraintBottom_toTopOf="@id/viewPagerSignupDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewAppName"
+                app:tabIndicator="@drawable/gradient_guest_signup_selected"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabIndicatorColor="@null"
+                app:tabIndicatorGravity="stretch"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/GuestSignupTabLayout"
+                app:tabTextColor="@color/run_parkin_tab_deselected_text" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerSignupDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tabLayoutAccountType"
+                app:layout_constraintStart_toStartOf="@id/tabLayoutAccountType"
+                app:layout_constraintTop_toBottomOf="@id/tabLayoutAccountType" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

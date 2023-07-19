@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    >
+
+    <TextView
+        android:id="@+id/textViewAccessHours"
+        style="@style/GuestLocationDetailsInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/access_hours"
+        app:layout_constraintTop_toBottomOf="@id/dividerActiveHours"
+        />
+
+    <TextView
+        android:id="@+id/textViewDescriptionActiveHours"
+        style="@style/GuestLocationDetailsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_facility_is_open_24_7"
+        app:layout_constraintTop_toBottomOf="@id/textViewAccessHours" />
+
+</merge>
