@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".recyclerview.RecyclerViewDemoActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/list_view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRecyclerViewSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/recycler_view_selection_lib" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonExpandableRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/expandable_recycler_view" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSimpleBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/bottom_navigation" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/image_slider" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDataBinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:text="@string/data_binding" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

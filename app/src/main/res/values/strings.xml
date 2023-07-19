@@ -189,4 +189,25 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="omang">Omang</string>
     <string name="date">Date</string>
     <string name="ui_widgets">Ui widgets</string>
+    <string name="recycler_view_selection_lib">Recycler view selection lib</string>
+    <string name="list_view">List view</string>
+    <string name="expandable_recycler_view">Expandable recycler view</string>
+    <string name="bottom_navigation">Bottom navigation</string>
+    <string name="mail_content">Android bootcamp is starting soon please fill the attached form</string>
+    <string name="mail_subject">Android bootcamp</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="bio_title">Bio</string>
+    <string name="submit">Submit</string>
+    <string name="image_slider">Image slider</string>
+    <string name="data_binding">Data binding</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="show_grid">Show grid</string>
+    <string name="games">Games</string>
+    <string name="_26_items">26 items</string>
+    <string name="single_selection">Single selection</string>
+    <string name="multi_selection">Multi selection</string>
+    <string name="recycler_view">Recycler view</string>
 </resources>

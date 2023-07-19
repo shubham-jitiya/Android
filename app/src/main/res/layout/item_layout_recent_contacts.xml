@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="@dimen/mail_contacts_card_margin_top"
+    android:layout_marginBottom="@dimen/mail_contacts_card_margin_bottom"
+    app:cardCornerRadius="@dimen/mail_contacts_card_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewContacts"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:src="@drawable/ic_placeholder_person_filled"
+            app:layout_constraintBottom_toBottomOf="@id/textViewContactsEmail"
+            app:layout_constraintEnd_toStartOf="@id/textViewContactsName"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewContactsName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintEnd_toStartOf="@id/buttonBio"
+            app:layout_constraintHorizontal_weight="7"
+            app:layout_constraintStart_toEndOf="@id/imageViewContacts"
+            app:layout_constraintTop_toTopOf="@id/imageViewContacts"
+            tools:text="Shubham J." />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBio"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/bio_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@id/textViewContactsName"
+            app:layout_constraintTop_toTopOf="@id/textViewContactsName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewContactsEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintEnd_toEndOf="@id/textViewContactsName"
+            app:layout_constraintStart_toStartOf="@id/textViewContactsName"
+            app:layout_constraintTop_toBottomOf="@id/textViewContactsName"
+            tools:text="jitiya66@gmail.com" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMailBioTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/bio_title"
+            android:textSize="@dimen/body"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/imageViewContacts"
+            app:layout_constraintTop_toBottomOf="@id/dividerAboveBio" />
+
+        <View
+            android:id="@+id/dividerAboveBio"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_gray"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/textViewContactsEmail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewContactsBioDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:fontFamily="@font/montserrat"
+            android:justificationMode="inter_word"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/textViewMailBioTitle"
+            app:layout_constraintTop_toBottomOf="@id/textViewMailBioTitle"
+            tools:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

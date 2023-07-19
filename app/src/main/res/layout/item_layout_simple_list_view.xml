@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewSimpleList"
+        android:layout_width="@dimen/folder_icon_size"
+        android:layout_height="@dimen/folder_icon_size"
+        android:src="@drawable/ic_placeholder_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewSimpleList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:textSize="@dimen/subtitle"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewSimpleList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewSimpleList"
+        app:layout_constraintTop_toTopOf="@id/imageViewSimpleList"
+        tools:text="Jitiya Shubham" />
+</androidx.constraintlayout.widget.ConstraintLayout>
