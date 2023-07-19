@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/textViewTitleAmenities"
+        style="@style/GuestLocationDetailsInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amenities"
+        app:layout_constraintTop_toBottomOf="@id/dividerAmenities" />
+
+    <View
+        android:id="@+id/viewAmenitiesDescriptionLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewInOut"
+        app:layout_constraintEnd_toStartOf="@id/viewAmenitiesDescriptionRight"
+        app:layout_constraintStart_toStartOf="@id/textViewTitleAmenities"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleAmenities" />
+
+    <View
+        android:id="@+id/viewAmenitiesDescriptionRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewPolicy"
+        app:layout_constraintEnd_toEndOf="@id/textViewTitleAmenities"
+        app:layout_constraintStart_toEndOf="@id/viewAmenitiesDescriptionLeft"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleAmenities"
+        app:layout_goneMarginStart="0dp" />
+
+    <ImageView
+        android:id="@+id/imageViewValet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_valet"
+        app:layout_constraintStart_toStartOf="@id/viewAmenitiesDescriptionLeft"
+        app:layout_constraintTop_toTopOf="@id/viewAmenitiesDescriptionLeft" />
+
+    <TextView
+        android:id="@+id/textViewValet"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/valet"
+        app:layout_constraintEnd_toEndOf="@id/viewAmenitiesDescriptionLeft"
+        app:layout_constraintStart_toEndOf="@id/imageViewValet"
+        app:layout_constraintTop_toTopOf="@id/imageViewValet" />
+
+    <ImageView
+        android:id="@+id/imageViewOvernightParking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_night_parking"
+        app:layout_constraintStart_toStartOf="@id/imageViewValet"
+        app:layout_constraintTop_toBottomOf="@id/imageViewValet" />
+
+    <TextView
+        android:id="@+id/textViewOvernightParking"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overnight_parking"
+        app:layout_constraintStart_toEndOf="@id/imageViewOvernightParking"
+        app:layout_constraintTop_toTopOf="@id/imageViewOvernightParking" />
+
+    <ImageView
+        android:id="@+id/imageViewOutdoorLot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outdoor_lot"
+        app:layout_constraintStart_toStartOf="@id/imageViewOvernightParking"
+        app:layout_constraintTop_toBottomOf="@id/imageViewOvernightParking" />
+
+    <TextView
+        android:id="@+id/textViewOutdoorLot"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/outdoor_lot"
+        app:layout_constraintStart_toEndOf="@id/imageViewOutdoorLot"
+        app:layout_constraintTop_toTopOf="@id/imageViewOutdoorLot" />
+
+    <ImageView
+        android:id="@+id/imageViewInOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_in_out"
+        app:layout_constraintBottom_toBottomOf="@id/viewAmenitiesDescriptionLeft"
+        app:layout_constraintStart_toStartOf="@id/imageViewOutdoorLot"
+        app:layout_constraintTop_toBottomOf="@id/imageViewOutdoorLot" />
+
+    <TextView
+        android:id="@+id/textViewInOut"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_out"
+        app:layout_constraintStart_toEndOf="@id/imageViewInOut"
+        app:layout_constraintTop_toTopOf="@id/imageViewInOut" />
+
+    <ImageView
+        android:id="@+id/imageViewElectriCharging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_electric_charging"
+        app:layout_constraintStart_toStartOf="@id/viewAmenitiesDescriptionRight"
+        app:layout_constraintTop_toTopOf="@id/viewAmenitiesDescriptionRight" />
+
+    <TextView
+        android:id="@+id/textViewElectriCharging"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/electric_charging"
+        app:layout_constraintEnd_toEndOf="@id/textViewTitleAmenities"
+        app:layout_constraintStart_toEndOf="@id/imageViewElectriCharging"
+        app:layout_constraintTop_toTopOf="@id/viewAmenitiesDescriptionRight" />
+
+    <ImageView
+        android:id="@+id/imageViewPayByPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pay_plate"
+        app:layout_constraintStart_toStartOf="@id/imageViewElectriCharging"
+        app:layout_constraintTop_toBottomOf="@id/imageViewElectriCharging" />
+
+    <TextView
+        android:id="@+id/textViewPayByPlate"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_by_plate"
+        app:layout_constraintEnd_toEndOf="@id/textViewElectriCharging"
+        app:layout_constraintStart_toEndOf="@id/imageViewPayByPlate"
+        app:layout_constraintTop_toTopOf="@id/imageViewPayByPlate" />
+
+    <ImageView
+        android:id="@+id/imageViewPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_terms_service"
+        app:layout_constraintBottom_toBottomOf="@id/viewAmenitiesDescriptionRight"
+        app:layout_constraintStart_toStartOf="@id/imageViewPayByPlate"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPayByPlate" />
+
+    <TextView
+        android:id="@+id/textViewPolicy"
+        style="@style/GuestLocationInfoAmenities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_service"
+        app:layout_constraintEnd_toEndOf="@id/textViewPayByPlate"
+        app:layout_constraintStart_toEndOf="@id/imageViewPolicy"
+        app:layout_constraintTop_toTopOf="@id/imageViewPolicy" />
+</merge>

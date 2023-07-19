@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewSnackbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".uiwidgets.SnackbarActivity">
+
+    <Button
+        android:id="@+id/snackbarDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/default_snackbar" />
+
+    <Button
+        android:id="@+id/snackbarWithAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snackbar_with_action" />
+
+</LinearLayout>

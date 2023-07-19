@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/guest_location_padding">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupSelectInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipSpacingHorizontal="@dimen/guest_location_chips_horizontal_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipHourly"
+            style="@style/GuestLocationChips"
+            android:checked="true"
+            android:text="@string/hourly" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDaily"
+            style="@style/GuestLocationChips"
+            android:text="@string/daily" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipMonthly"
+            style="@style/GuestLocationChips"
+            android:text="@string/monthly" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipEvent"
+            style="@style/GuestLocationChips"
+            android:text="@string/event" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/textViewEnterAfter"
+        style="@style/GuestLocationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_location_schedule_margin_top"
+        android:layout_marginEnd="@dimen/guest_location_text_view_margin_start"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/enter_after"
+        app:layout_constraintEnd_toStartOf="@id/textViewExitBefore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chipGroupSelectInterval" />
+
+    <TextView
+        android:id="@+id/textViewExitBefore"
+        style="@style/GuestLocationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/guest_location_text_view_margin_end"
+        android:text="@string/exit_before"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewEnterAfter"
+        app:layout_constraintTop_toTopOf="@id/textViewEnterAfter" />
+
+    <EditText
+        android:id="@+id/editTextEnterAfterDate"
+        style="@style/GuestLocationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_location_edit_text_date_margin_top"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:hint="@string/aug_20_2020"
+        app:layout_constraintEnd_toEndOf="@id/textViewEnterAfter"
+        app:layout_constraintStart_toStartOf="@id/textViewEnterAfter"
+        app:layout_constraintTop_toBottomOf="@id/textViewEnterAfter" />
+
+    <EditText
+        android:id="@+id/editTextExitBeforeDate"
+        style="@style/GuestLocationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_location_edit_text_date_margin_top"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:hint="@string/aug_20_2020"
+        app:layout_constraintEnd_toEndOf="@id/textViewExitBefore"
+        app:layout_constraintStart_toStartOf="@id/textViewExitBefore"
+        app:layout_constraintTop_toBottomOf="@id/textViewExitBefore" />
+
+    <EditText
+        android:id="@+id/editTextEnterAfterTime"
+        style="@style/GuestLocationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_location_edit_text_time_margin_top"
+        android:drawableEnd="@drawable/ic_clock"
+        android:hint="@string/_6_00_am"
+        app:layout_constraintEnd_toEndOf="@id/editTextEnterAfterDate"
+        app:layout_constraintStart_toStartOf="@id/editTextEnterAfterDate"
+        app:layout_constraintTop_toBottomOf="@id/editTextEnterAfterDate" />
+
+    <EditText
+        android:id="@+id/editTextExitBeforeTime"
+        style="@style/GuestLocationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_location_edit_text_time_margin_top"
+        android:drawableEnd="@drawable/ic_clock"
+        android:hint="@string/_8_00_am"
+        app:layout_constraintEnd_toEndOf="@id/editTextExitBeforeDate"
+        app:layout_constraintStart_toStartOf="@id/editTextExitBeforeDate"
+        app:layout_constraintTop_toBottomOf="@id/editTextExitBeforeDate" />
+
+    <include layout="@layout/guest_location_layout_should_know" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerAmenities"
+        style="@style/GuestLocationDivider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/guest_location_divider_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionShouldKnow" />
+
+    <include layout="@layout/guest_location_layout_amenities" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerActiveHours"
+        style="@style/GuestLocationDivider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/guest_location_divider_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/viewAmenitiesDescriptionLeft" />
+
+    <include layout="@layout/guest_location_layout_access_hours" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerBelowActiveHours"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionActiveHours" />
+
+    <include layout="@layout/guest_location_layout_redeem" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerBelowRedeem"
+        style="@style/GuestLocationDivider"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewRedeemPointThird" />
+
+    <include layout="@layout/guest_location_layout_getting_there" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerGettingThere"
+        style="@style/GuestLocationDivider"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewGettingThereDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

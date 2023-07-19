@@ -1,3 +1,192 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="default_button">Default</string>
+    <string name="text_button">Text button</string>
+    <string name="outlined_button_icon">Outlined button with icon</string>
+    <string name="default_button_icon">Default button with icon</string>
+    <string-array name="country">
+        <item>India</item>
+        <item>US</item>
+        <item>Canada</item>
+        <item>Switzerland</item>
+    </string-array>
+    <string name="hello_first_fragment">First fragment</string>
+    <string name="hello_second_fragment">Second fragment</string>
+    <string name="hello_third_fragment">Third fragment</string>
+    <string name="dummy_text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </string>
+    <string name="dummy_text_sentence_short"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla ut. </string>
+    <string name="app_compat_button">App compat button</string>
+    <string name="status">Status</string>
+    <string name="chats">Chats</string>
+    <string name="button">Button</string>
+    <string name="toast">Toast</string>
+    <string name="toggle">Toggle</string>
+    <string name="image_button">Image button</string>
+    <string name="checkbox">Checkbox</string>
+    <string name="floating_action_button">Floating action button</string>
+    <string name="snackbar">Snackbar</string>
+    <string name="text_input_layout">Text input layout</string>
+    <string name="tab_layout">Tab layout</string>
+    <string name="app_bar_collapsable_design">App bar collapsable design</string>
+    <string name="linear_layout">Linear layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout_design">Constraint Layout Design</string>
+    <string name="grid_layout">Grid Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="grid_layout_project">Grid Layout project</string>
+    <string name="frame_layout_fragments">Frame Layout - Fragments</string>
+    <string name="coordinate_layout">Coordinate Layout</string>
+    <string name="navigation_host">Navigation Host</string>
+    <string name="calls">Calls</string>
+    <string name="new_application">New Application</string>
+    <string name="back">Back</string>
+    <string name="create_an_application_for_the_hosts_indicating_all_the_neccessary_living_conditions">Create an application for the hosts indicating all the necessary living conditions</string>
+    <string name="destination">Destination</string>
+    <string name="nights">Nights</string>
+    <string name="apr_18_2023">Apr 18, 2023</string>
+    <string name="_08">08</string>
+    <string name="guests">Guests</string>
+    <string name="bedrooms">Bedrooms</string>
+    <string name="_02">02</string>
+    <string name="_03">03</string>
+    <string name="select_type">Select type</string>
+    <string name="any_type">Any type</string>
+    <string name="create_application">Create Application</string>
+    <string name="contacts">Contacts</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+    <string name="next">Next</string>
+    <string name="title_1">Title 1</string>
+    <string name="title_2">Title 2</string>
+    <string name="title_3">Title 3</string>
+    <string name="_4">4</string>
+    <string name="good_morning">Good morning</string>
+    <string name="marcus_white">Marcus white</string>
+    <string name="san_francisco_ca">San francisco, CA</string>
+    <string name="all_products">All Products</string>
+    <string name="show_all">Show all</string>
+    <string name="default_nparent_top">Default - \nparent top</string>
+    <string name="default_nparent_bottom">Default - \nparent bottom</string>
+    <string name="parent_end">parent end</string>
+    <string name="parent_end_n_amp_bottom"><![CDATA[parent end \n & bottom]]></string>
+    <string name="center_parent">center parent</string>
+    <string name="center_vertical">center vertical</string>
+    <string name="center_vertical_n_amp_end"><![CDATA[center vertical \n & end]]></string>
+    <string name="center_horizontally">center horizontally</string>
+    <string name="center_horizontally_n_amp_parent_end"><![CDATA[center horizontally \n& parent end]]></string>
+    <string name="end_of_start_of">end of - start of</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="default_snackbar">Default snackbar</string>
+    <string name="snackbar_with_action">Snackbar with action</string>
+    <string name="button_information">button information</string>
+    <string name="test_ripple_button">test ripple button</string>
+    <string name="ripple_button">Ripple button</string>
+    <string name="see_list_of_items">see list of items</string>
+    <string name="title_4">Title 4</string>
+    <string name="text_input_hint">Text input hint</string>
+    <string name="edit_text_hint">edit text hint</string>
+    <string name="text_input_floating_hint">Text input floating hint</string>
+    <string name="text_layout_floating_hint_animation_disabled">text layout floating hint animation - disabled</string>
+    <string name="text_layout_floating_hint_disabled">Text layout floating hint disabled</string>
+    <string name="custom_floating_hint_appearance">Custom floating hint appearance</string>
+    <string name="default_counter">Default counter</string>
+    <string name="custom_counter_text_appearance">Custom counter text appearance</string>
+    <string name="error_enabled">Error enabled</string>
+    <string name="password_toggle">Password toggle</string>
+    <string name="prefix_text">prefix text</string>
+    <string name="outlined">Outlined</string>
+    <string name="email">Email</string>
+    <string name="contact">Contact</string>
+    <string name="select_country">Select country</string>
+    <string name="default_toast">Default toast</string>
+    <string name="toast_left">Toast Left</string>
+    <string name="custom_toast">Custom Toast</string>
+    <string name="goto_second_fragment">Goto Second Fragment</string>
+    <string name="goto_third_fragment">Goto Third Fragment</string>
+    <string name="business_content">Business content</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="getting_there">Getting There</string>
+    <string name="enter_this_location_at_333_o_keefe_ave_this_is_the_p146_lot_operated_by_premium_parking_it_is_located_on_the_west_left_hand_side_of_o_keefe_ave_a_one_way_street_between_perdido_st_and_union_st_the_entrance_is_marked_by_a_red_p_sign_with_white_lettering">Enter this location at 333 O\'Keefe Ave. This is the P146 lot, operated by Premium Parking. It is located on the west/left-hand side of O\'Keefe Ave. (a one-way street) between Perdido St. and Union St. The entrance is marked by a red \'P\' sign with white lettering.</string>
+    <string name="red_onion">Red Onion</string>
+    <string name="headphones">Headphones</string>
+    <string name="_124">$124</string>
+    <string name="guest_signup">Guest signup KT Screen</string>
+    <string name="personal">Personal</string>
+    <string name="runparking">RunParking</string>
+    <string name="business">Business</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_account">Create Account</string>
+    <string name="subscribe_for_newsletter">Subscribe for Newsletter</string>
+    <string name="by_clicking_create_account_you_agree_to_runparking_terms_of_use_and_privacy_policy">By clicking create account you agree to RunParking <u>Terms of Use</u> and <u>Privacy Policy</u></string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="continue_with_apple">Continue with Apple</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guest_location_details">Guest location details</string>
+    <string name="_1_2k">(1.2k)</string>
+    <string name="_179_w_washington_st">179 W Washington St.</string>
+    <string name="_24582">24582</string>
+    <string name="_10">$ 10</string>
+    <string name="_8_00_am">8:00 AM</string>
+    <string name="_6_00_am">6:00 AM</string>
+    <string name="aug_20_2020">Aug 20, 2020</string>
+    <string name="should_know_list">
+       &#x25CF; Height Restriction: 6\' 8\"
+        \n&#x25CF; This facility does not accept luxury and/or exotic vehicles
+        <!--        <li>Height Restriction: 6 8</li>-->
+        <!--        <li>This facility does not accept luxury and/or exotic vehicles</li>-->
+    </string>
+    <!--    run parkin app-->
+    <string name="in_out">In Out</string>
+    <string name="outdoor_lot">Outdoor Lot</string>
+    <string name="access_hours">Access Hours</string>
+    <string name="this_facility_is_open_24_7">This facility is open 24/7.</string>
+    <string name="how_to_redeem">How to Redeem</string>
+    <string name="_0_2_mi">0.2 mi</string>
+    <string name="book_now">Book now</string>
+    <string name="hourly">Hourly</string>
+    <string name="event">Event</string>
+    <string name="monthly">Monthly</string>
+    <string name="daily">Daily</string>
+    <string name="enter_after">Enter After</string>
+    <string name="exit_before">Exit Before</string>
+    <string name="amenities">Amenities</string>
+    <string name="valet">Valet</string>
+    <string name="overnight_parking">Overnight Parking</string>
+    <string name="electric_charging">Electric Charging</string>
+    <string name="pay_by_plate">Pay-by-Plate</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="_1">1</string>
+    <string name="make_sure_your_license_plate_matches_the_plate_on_your_parking_pass">Make sure your license plate matches the plate on your Parking Pass.</string>
+    <string name="you_may_park_anywhere_that_doesn_t_say_reserved_have_a_person_s_name_a_business_name_or_any_other_special_signage_or_messaging_on_the_actual_space_failure_to_do_so_will_result_in_a_ticket_tow_or_immobilization">You may park anywhere that doesn\'t say “Reserved”, have a person’s name, a business name, or any other special signage or messaging on the actual space. Failure to do so will result in a ticket, tow, or immobilization.</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="simply_leave_when_you_re_ready_to_go">Simply leave when you\'re ready to go!</string>
+    <string name="things_you_should_know">Things You Should Know</string>
+    <string name="group_1">Group 1</string>
+    <string name="group_2">Group 2</string>
+    <string name="group_3">Group 3</string>
+    <string name="omang">Omang</string>
+    <string name="date">Date</string>
+    <string name="ui_widgets">Ui widgets</string>
 </resources>

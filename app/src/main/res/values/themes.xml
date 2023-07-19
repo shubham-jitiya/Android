@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="buttonStyle">@style/gradientButton</item>
+
+    </style>
+    <style name="Theme.GuestSignup" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/run_parkin_primary</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">@dimen/guest_location_default_font_size</item>
     </style>
 </resources>

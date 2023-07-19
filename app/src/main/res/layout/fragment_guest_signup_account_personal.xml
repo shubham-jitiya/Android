@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/run_parkin_primary">
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        style="@style/TextViewGuestSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_first_name_margin_top"
+        android:layout_marginEnd="@dimen/guest_signup_text_view_first_name_margin_end"
+        android:text="@string/first_name"
+        app:layout_constraintEnd_toStartOf="@id/textViewLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        style="@style/TextViewGuestSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/guest_signup_text_view_last_name_margin_start"
+        android:text="@string/last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewFirstName"
+        app:layout_constraintTop_toTopOf="@id/textViewFirstName" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        style="@style/EditTextGuestSignup"
+        app:layout_constraintEnd_toEndOf="@id/textViewFirstName"
+        app:layout_constraintStart_toStartOf="@id/textViewFirstName"
+        app:layout_constraintTop_toBottomOf="@id/textViewFirstName" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        style="@style/EditTextGuestSignup"
+        app:layout_constraintEnd_toEndOf="@id/textViewLastName"
+        app:layout_constraintStart_toStartOf="@id/textViewLastName"
+        app:layout_constraintTop_toBottomOf="@id/textViewLastName" />
+
+    <TextView
+        android:id="@+id/textViewEmailId"
+        style="@style/TextViewGuestSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_email_id_margin_top"
+        android:text="@string/email_id"
+        app:layout_constraintEnd_toEndOf="@id/editTextLastName"
+        app:layout_constraintStart_toStartOf="@id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@id/editTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextEmailId"
+        style="@style/EditTextGuestSignup"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/textViewEmailId"
+        app:layout_constraintStart_toStartOf="@id/textViewEmailId"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailId" />
+
+    <TextView
+        android:id="@+id/textViewMobileNumber"
+        style="@style/TextViewGuestSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_email_id_margin_top"
+        android:text="@string/mobile_number"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmailId"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMobileNumberCountryCode"
+        style="@style/EditTextGuestSignup"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:paddingStart="@dimen/guest_signup_edit_text_country_code_padding_start"
+        app:layout_constraintEnd_toStartOf="@id/editTextMobileNumber"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintStart_toStartOf="@id/textViewMobileNumber"
+        app:layout_constraintTop_toBottomOf="@id/textViewMobileNumber" />
+
+    <EditText
+        android:id="@+id/editTextMobileNumber"
+        style="@style/EditTextGuestSignup"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/guest_signup_edit_text_mobile_number_margin_start"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@id/textViewMobileNumber"
+        app:layout_constraintHorizontal_weight="8.5"
+        app:layout_constraintStart_toEndOf="@id/editTextMobileNumberCountryCode"
+        app:layout_constraintTop_toBottomOf="@id/textViewMobileNumber" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        style="@style/TextViewGuestSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_email_id_margin_top"
+        android:text="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/editTextMobileNumber"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        style="@style/DenseOutlined"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guest_signup_edit_text_height"
+        android:layout_marginTop="@dimen/guest_signup_edit_text_margin_top"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edit_text_guest_signup"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxSubscribeNewsletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="@string/subscribe_for_newsletter"
+        android:textColor="@color/white"
+        android:textSize="@dimen/guest_signup_subscribe_newsletter"
+        android:paddingStart="@dimen/guest_signup_checkbox_padding_start"
+        app:buttonCompat="@drawable/selector_checkbox"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/run_parkin_primary"
+        android:textSize="@dimen/guest_signup_button_create_account"
+        app:layout_constraintTop_toBottomOf="@id/checkboxSubscribeNewsletter"
+        app:rippleColor="@color/run_parkin_ripple_color"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_policy_margin_top"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="@string/by_clicking_create_account_you_agree_to_runparking_terms_of_use_and_privacy_policy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/guest_signup_policy"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateAccount"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerOrFirst"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:dividerColor="@color/run_parkin_divider"
+        app:layout_constraintBottom_toBottomOf="@id/textViewOr"
+        app:layout_constraintEnd_toStartOf="@id/textViewOr"
+        app:layout_constraintStart_toStartOf="@id/textViewPolicy"
+        app:layout_constraintTop_toTopOf="@id/textViewOr" />
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_text_view_or_margin_top"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/guest_signup_text_view_or_padding_horizontal"
+        android:text="or"
+        android:textColor="@color/white"
+        android:textSize="@dimen/guest_signup_text_or"
+        app:layout_constraintEnd_toEndOf="@id/dividerOrSecond"
+        app:layout_constraintStart_toStartOf="@id/textViewPolicy"
+        app:layout_constraintTop_toBottomOf="@id/textViewPolicy" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerOrSecond"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:dividerColor="@color/run_parkin_divider"
+        app:layout_constraintBottom_toBottomOf="@id/textViewOr"
+        app:layout_constraintEnd_toEndOf="@id/textViewPolicy"
+        app:layout_constraintStart_toEndOf="@id/textViewOr"
+        app:layout_constraintTop_toTopOf="@id/textViewOr" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonApple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/guest_signup_button_apple_margin_top"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:text="@string/continue_with_apple"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/guest_signup_button_signin"
+        app:icon="@drawable/ic_apple"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewOr"
+        app:rippleColor="@color/run_parkin_ripple_color" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFacebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/guest_signup_button_facebook_margin_end"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:text="@string/facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/run_parkin_button_facebook"
+        android:textSize="@dimen/guest_signup_button_signin"
+        app:icon="@drawable/ic_facebook"
+        app:iconGravity="textStart"
+        app:iconTint="@color/run_parkin_button_facebook"
+        app:layout_constraintEnd_toStartOf="@id/buttonGoogle"
+        app:layout_constraintStart_toStartOf="@id/buttonApple"
+        app:layout_constraintTop_toBottomOf="@id/buttonApple"
+        app:rippleColor="@color/run_parkin_ripple_color" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/guest_signup_button_google_margin_start"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:text="@string/google"
+        android:textAllCaps="false"
+        android:textColor="@color/run_parkin_button_google"
+        android:textSize="@dimen/guest_signup_button_signin"
+        app:icon="@drawable/ic_google_plus"
+        app:iconGravity="textStart"
+        app:iconTint="@color/run_parkin_button_google"
+        app:layout_constraintEnd_toEndOf="@id/buttonApple"
+        app:layout_constraintStart_toEndOf="@id/buttonFacebook"
+        app:layout_constraintTop_toTopOf="@id/buttonFacebook"
+        app:rippleColor="@color/run_parkin_ripple_color" />
+</androidx.constraintlayout.widget.ConstraintLayout>
