@@ -19,6 +19,7 @@
         android:id="@+id/buttonLifecycleSendData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
         app:layout_constraintTop_toBottomOf="@id/textViewLifecycle"
         android:text="@string/send_data"
         />

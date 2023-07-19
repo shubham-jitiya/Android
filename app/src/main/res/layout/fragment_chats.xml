@@ -20,6 +20,7 @@
         android:id="@+id/buttonSendToBookFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
         android:text="@string/send_to_book_fragment"
         app:layout_constraintEnd_toEndOf="@id/editTextChatFragment"
         app:layout_constraintStart_toStartOf="@id/editTextChatFragment"
